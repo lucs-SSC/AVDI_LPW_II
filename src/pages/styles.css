@@ -1,0 +1,119 @@
+*{
+  font-family: 'Times New Roman', Times, serif;
+  box-sizing: border-box;
+}
+
+body{
+  display: grid;
+  height: 100vh;
+  margin: 0px;
+  background-color: #ddd;
+  grid-template-rows: 60px 10px 30px;
+  grid-template-columns: 1fr;
+  grid-template-areas: 
+      "header"
+      "content"
+}
+/*Configuração do header*/
+header.header{
+  display: flex;
+  background-color: black;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  box-shadow: 
+    0 2px 4px -1px rgba(0,0,0,.2);
+    
+  padding: 10px;
+  margin-bottom: 0px;
+}
+/*Configuração do content*/
+main.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cadastro {
+  width: 60%;
+  margin: 10px auto 0;
+  padding: 20px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+table {
+  width: 60%;
+  margin-top: 10px;
+  background-color: #fff;
+  border: 1px black solid;
+  border-spacing: 0;
+}
+
+th {
+  background-color: #080808;
+  color: white;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  text-align: center;
+  border: 1px gray solid;
+}
+
+td {
+  padding: 8px;
+  text-align: center;
+  border: 1px gray solid;
+}
+
+form label {
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+  text-align: center;
+  
+}
+
+form label.form-title{
+  font-size: 1.2rem;
+  font-weight: bold;
+ 
+}
+
+form select.select-box{
+  font-size: 0.8rem;
+  padding: 10px;
+}
+button {
+  padding: 10px 20px;
+  border-radius: 4px;
+  border: 0;
+  background-color: #28A428;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+input {
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.Excluir {
+  background-color: #AA2A10;
+}
+
+/*Configuração do footer*/
+footer.footer{
+  grid-area: footer;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 0.6rem;
+  padding: 15px;
+  margin-top: 40px;
+  background-color: black;
+  color: white;
+}
